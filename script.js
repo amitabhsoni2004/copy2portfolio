@@ -73,7 +73,7 @@ mediaQuery.addEventListener('change', e => {
 });
 
 document.getElementById('hamburger').addEventListener('click', function() {
-  this.querySelector('svg').style.fill ? "black" : "white";
+  this.querySelector('svg').style.fill ? "white" : "black";
 });
 document.getElementById('close').addEventListener('click', function() {
   this.querySelector('svg').style.fill = 'white';
