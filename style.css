@@ -450,7 +450,7 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%); /* Start above the screen */
-        transition: opacity 0.5s ease-in-out, visibility 0.3s ease-in-out, transform 2s ease-in-out;
+        transition: opacity 0.2s ease-in-out, visibility 0.5s linear, transform 1s linear;
         position: fixed;
         top: -12px; /* Adjusted to ensure it starts right off the top edge */
         left: -12px;
