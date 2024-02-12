@@ -96,7 +96,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.hov1:hover {
     color: rgb(255, 255, 255);
     transition: 1s;
     text-decoration: underline;
@@ -374,6 +374,16 @@ footer {
     width: 100vw;
     border: 2px solid black;
 }
+.hov2 {
+    transition: transform 0.3s ease;
+}
+
+.hov2:hover {
+    color: rgb(103, 102, 102);
+    transform: scale(1.1);
+}
+
+
 #about{
     display: flex;
     flex-direction: row;
@@ -597,5 +607,8 @@ footer {
         height: 370px;
     }
    
+    .hov1:hover {
+        color: rgb(84, 83, 83);
+    }
 
 }
