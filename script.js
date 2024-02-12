@@ -72,9 +72,9 @@ mediaQuery.addEventListener('change', e => {
   }
 });
 
-// document.getElementById('hamburger').addEventListener('click', function() {
-//   this.querySelector('svg').style.fill = 'white';
-// });
-// document.getElementById('close').addEventListener('click', function() {
-//   this.querySelector('svg').style.fill = 'white';
-// });
+document.getElementById('hamburger').addEventListener('click', function() {
+  this.querySelector('svg').style.fill ? "black" : "white";
+});
+document.getElementById('close').addEventListener('click', function() {
+  this.querySelector('svg').style.fill = 'white';
+});
