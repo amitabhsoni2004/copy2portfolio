@@ -12,6 +12,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    
 }
 
 header {
@@ -110,8 +111,11 @@ main {
 #Home {
     display: flex;
     gap: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 15px;
+    background: url('https://stability-images-upload.s3.amazonaws.com/v1_txt2img_040f3222-80c0-40b9-b262-ada002869692.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div1 {
@@ -196,6 +200,12 @@ main {
     width: 440px;
     object-fit: cover;
     object-position: top;
+    filter: grayscale(100%);
+
+}
+.myImage img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
 }
 
 @keyframes anime {
@@ -377,28 +387,15 @@ footer {
 .hov2 {
     transition: transform 0.3s ease;
 }
-
 .hov2:hover {
-    color: rgb(103, 102, 102);
     transform: scale(1.1);
 }
-.hov3 {
-    transition: transform 0.3s ease;
+.ahover{
+    color: rgb(0, 4, 248);
 }
-
-.hov3:hover {
-    color: rgb(255, 0, 0);
-    transform: scale(1.1);
+.ahover:hover{
+    color: rgb(255, 255, 255);
 }
-.hov4 {
-    transition: transform 0.3s ease;
-}
-
-.hov4:hover {
-    color: rgb(7, 7, 161);
-    transform: scale(1.1);
-}
-
 
 #about{
     display: flex;
@@ -408,6 +405,10 @@ footer {
     gap: 50px;
     width: 100%;
     padding: 10px;
+    background-image: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 .links{
     display: flex;
@@ -450,7 +451,7 @@ footer {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%); /* Start above the screen */
-        transition: opacity 0.2s ease-in-out, visibility 6s ease-out, transform 2s ease-out;
+        transition: opacity 0.2s ease-in-out, visibility 1s linear, transform 1s linear;
         position: fixed;
         top: -12px; /* Adjusted to ensure it starts right off the top edge */
         left: -12px;
@@ -525,7 +526,6 @@ footer {
 
     .myImage img {
         height: 250px;
-        width: 250px;
     }
 
     #Home {
@@ -626,5 +626,18 @@ footer {
     .hov1:hover {
         color: rgb(84, 83, 83);
     }
-
+    .abt{
+        height: 205px;
+    }
+    .links{
+        display: flex;
+        /* flex-shrink: revert; */
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    .sm{
+        gap: 30px;
+    }
 }

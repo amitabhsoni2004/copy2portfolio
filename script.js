@@ -78,3 +78,15 @@ document.getElementById('hamburger').addEventListener('click', function() {
 document.getElementById('close').addEventListener('click', function() {
   this.querySelector('svg').style.fill = 'white';
 });
+
+
+// window.addEventListener("beforeunload",(event)=>{
+//   event.preventDefault();
+//   event.returnValue = "";
+// });
+
+function saveToLocalStorage() {
+  var key = document.getElementById('storageKey').value;
+  var value = document.getElementById('storageValue').value;
+  localStorage.setItem(key, value);
+}
