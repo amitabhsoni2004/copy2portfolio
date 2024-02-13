@@ -7,6 +7,7 @@
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scrollbar-width: 0px;
+
 }
 
 body {
@@ -121,6 +122,7 @@ main {
 .div1 {
     height: 670px;
     width: 50%;
+    overflow-y: hidden;
 }
 
 .div2 {
@@ -180,9 +182,12 @@ main {
 }
 
 .intro button:hover {
-    background-color: blue;
+    background-color: rgb(0, 217, 255);
     transition: 1s;
+    font-size: 15px;
     border: 2px solid black;
+    color: black;
+    font-weight: 700;
 }
 
 .myImage {
@@ -191,21 +196,32 @@ main {
     margin: 85px 150px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 9px 18px 21px 5px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 0px 10px aqua);
     position: relative;
 }
-
+/* @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
 .myImage img {
     height: 500px;
     width: 440px;
     object-fit: cover;
     object-position: top;
     filter: grayscale(100%);
-
+    border-radius: 15px;
 }
 .myImage img:hover{
     filter: grayscale(0%);
     transition: 1s;
+    border: 8px solid;
+    border-color: aqua;
+    transition: 1s;
+    /* animation: spin 2s linear infinite; */
 }
 
 @keyframes anime {
@@ -395,6 +411,7 @@ footer {
 }
 .ahover:hover{
     color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 #about{
@@ -507,11 +524,12 @@ footer {
     }
 
     .div2 {
-        height: 250px;
+        height: 320px;
         width: 100vw;
-        display: grid;
-        place-content: center;
-        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
     }
 
     .intro {
@@ -520,12 +538,17 @@ footer {
     }
 
     .myImage {
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        margin: 20px;
+        /* width: 100%; */
     }
 
     .myImage img {
-        height: 250px;
+        height: 300px;
+        width:100%;
+        /* padding: 10px; */
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     #Home {
