@@ -13,7 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 header {
@@ -27,11 +27,6 @@ header {
     transition: background-color 1s ease-in;
 }
 
-
-header:hover {
-    background-color: blue;
-}
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -40,14 +35,9 @@ header nav {
 #hamburger {
     display: none;
 }
-#hamburger:hover{
-    color: white;
-}
+
 #close {
     display: none;
-}
-#close:hover{
-    color: white;
 }
 
 .logo {
@@ -99,20 +89,16 @@ a {
 }
 
 .hov1:hover {
-    color: rgb(255, 255, 255);
-    transition: 1s;
     text-decoration: underline;
 }
 
 main {
     width: 100vw;
-    /* border: 2px solid black; */
 }
 
 #Home {
     display: flex;
     gap: 10px;
-    /* margin: 10px; */
     padding: 15px;
     background: url('https://stability-images-upload.s3.amazonaws.com/v1_txt2img_040f3222-80c0-40b9-b262-ada002869692.png');
     background-repeat: no-repeat;
@@ -182,7 +168,7 @@ main {
 }
 
 .intro button:hover {
-    background-color: rgb(0, 217, 255);
+    background-color: rgb(0, 0, 0);
     transition: 1s;
     font-size: 15px;
     border: 2px solid black;
@@ -196,17 +182,10 @@ main {
     margin: 85px 150px;
     overflow: hidden;
     border-radius: 15px;
-    filter: drop-shadow(0px 0px 10px aqua);
+    filter: drop-shadow(0px 0px 10px black);
     position: relative;
 }
-/* @keyframes spin {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
+
 .myImage img {
     height: 500px;
     width: 440px;
@@ -215,13 +194,14 @@ main {
     filter: grayscale(100%);
     border-radius: 15px;
 }
-.myImage img:hover{
+
+.myImage img:hover {
     filter: grayscale(0%);
     transition: 1s;
     border: 8px solid;
-    border-color: aqua;
+    border-color: rgb(0, 0, 0);
     transition: 1s;
-    /* animation: spin 2s linear infinite; */
+
 }
 
 @keyframes anime {
@@ -257,7 +237,6 @@ main {
 }
 
 .lang {
-    /* border: 2px solid black; */
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -284,7 +263,6 @@ main {
 
 .projects {
     background-color: rgb(40 40 106);
-    /* margin-top: 50px; */
     display: grid;
     place-content: center;
     color: white;
@@ -317,7 +295,7 @@ main {
 }
 
 .p1 button {
-    padding: 15px 10px 15px 50px;
+    padding: 15px 10px 15px 30px;
     background-color: transparent;
     cursor: pointer;
     display: flex;
@@ -336,9 +314,10 @@ main {
 }
 
 .p1 svg {
-    margin: 3px 10px 0px 30px;
+    margin: 3px 10px 0px 10px;
 }
-#contme{
+
+#contme {
     height: 600px;
     display: flex;
     justify-content: center;
@@ -346,37 +325,41 @@ main {
     padding: 10px;
     margin-top: 5%;
 }
-.ctn1{
+
+.ctn1 {
     height: 550px;
     width: 50vw;
-    /* background-color: green; */
-}
-.ctn1 img{
-    height: 545px;
-    width: 90%;
-    /* background-color: red; */
+
 }
 
-.ctndets{
+.ctn1 img {
+    height: 545px;
+    width: 90%;
+}
+
+.ctndets {
     height: 450px;
     width: 50%;
     margin: 30px;
 }
-#form{
+
+#form {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
     justify-content: center;
-    /* align-items: center; */
     padding: 0px;
 }
-#userName{
+
+#userName {
     padding: 20px;
 }
-#message{
+
+#message {
     padding: 10px 20px;
 }
-#sendmess{
+
+#sendmess {
     width: 250px;
     font-size: 20px;
     padding: 15px 30px;
@@ -385,13 +368,14 @@ main {
     cursor: pointer;
     color: white;
     background-color: rgb(40 40 106);
-    border: 2px solid black;    
+    border: 2px solid black;
 }
-#sendmess:hover{
+
+#sendmess:hover {
     color: black;
     background-color: white;
     transition: 1s;
-    
+
 }
 
 
@@ -400,21 +384,25 @@ footer {
     width: 100vw;
     border: 2px solid black;
 }
+
 .hov2 {
     transition: transform 0.3s ease;
 }
+
 .hov2:hover {
     transform: scale(1.1);
 }
-.ahover{
+
+.ahover {
     color: rgb(0, 4, 248);
 }
-.ahover:hover{
+
+.ahover:hover {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-#about{
+#about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -427,11 +415,13 @@ footer {
     background-size: cover;
     color: white;
 }
-.links{
+
+.links {
     display: flex;
     gap: 25px;
 }
-.abt{
+
+.abt {
     height: 400px;
     width: 95%;
     display: flex;
@@ -440,9 +430,11 @@ footer {
     align-items: center;
     gap: 5px;
 }
-.sm{
+
+.sm {
     gap: 20px;
 }
+
 @media screen and (max-width:600px) {
     header {
         display: flex;
@@ -453,13 +445,12 @@ footer {
     .listctn ul li {
         font-size: 15px;
         text-align: center;
-       
+
     }
 
     .listctn {
         width: 100vw;
         display: none;
-        
     }
 
     .listctn1 {
@@ -467,26 +458,28 @@ footer {
         justify-content: center;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-100%); /* Start above the screen */
-        transition: opacity 0.2s ease-in-out, visibility 1s linear, transform 1s linear;
+        transform: translateX(-100%);
+        transition: opacity 0.2s ease-in-out, visibility 1s ease-out, transform 1s ease-out;
         position: fixed;
-        top: -12px; /* Adjusted to ensure it starts right off the top edge */
+        top: -12px;
         left: -12px;
-        width: 100%;
+        width: 85%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.31);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(3.42px);
         -webkit-backdrop-filter: blur(3.42px);
         border: 1px solid rgba(255, 255, 255, 1);
+        text-decoration: underline;
     }
-    
+
     .listctn1.show {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0); /* Move into view */
+        transform: translateY(0);
+        /* Move into view */
     }
-    
+
 
     .listctn ul {
         grid-template-columns: 1fr;
@@ -524,12 +517,12 @@ footer {
     }
 
     .div2 {
-        height: 340px;
+        height: 370px;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
-      
+
     }
 
     .intro {
@@ -539,16 +532,14 @@ footer {
 
     .myImage {
         height: 300px;
-        margin: 20px;
-        /* width: 100%; */
+        margin: 40px;
     }
 
     .myImage img {
         height: 300px;
-        width:100%;
-        /* padding: 10px; */
+        width: 100%;
+
         object-fit: cover;
-        border-radius: 50%;
     }
 
     #Home {
@@ -610,57 +601,67 @@ footer {
         padding: 10px 0px 10px 20px;
         font-size: 20px;
     }
-    #about{
+
+    #about {
         flex-direction: column;
         gap: 5px;
     }
-    .abt{
+
+    .abt {
         height: 150px;
     }
-    #contme{
+
+    #contme {
         align-items: center;
         flex-direction: column;
         gap: 5px;
         height: 730px;
     }
-    .manimg{
+
+    .manimg {
         width: 85vw;
         height: 260px;
     }
-    .ctn1 img{
+
+    .ctn1 img {
         height: 245px;
         width: 100%;
     }
 
-    #sendmess{
+    #sendmess {
         width: 150px;
         font-size: 16px;
         padding: 10px 20px;
-          
+
     }
-    #form{
+
+    #form {
         gap: 30px;
     }
-    .ctndets{
+
+    .ctndets {
         width: 90vw;
         height: 370px;
     }
-   
+
     .hov1:hover {
         color: rgb(84, 83, 83);
     }
-    .abt{
+
+    .abt {
         height: 205px;
     }
-    .links{
+
+    .links {
         display: flex;
-        /* flex-shrink: revert; */
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
         gap: 25px;
     }
-    .sm{
+
+    .sm {
         gap: 30px;
     }
+
 }

@@ -65,25 +65,9 @@ mediaQuery.addEventListener('change', e => {
     // If we are now in mobile view
     toggleMenu(true); // Hide the menu
   } else {
-    // For larger screens, adjust as needed
-    listctn1.style.display = "none"; // Or set it to flex if you want it always visible
     hamburger.style.display = "none";
-    close.style.display = "none";
   }
 });
-
-document.getElementById('hamburger').addEventListener('click', function() {
-  this.querySelector('svg').style.fill ? "white" : "black";
-});
-document.getElementById('close').addEventListener('click', function() {
-  this.querySelector('svg').style.fill = 'white';
-});
-
-
-// window.addEventListener("beforeunload",(event)=>{
-//   event.preventDefault();
-//   event.returnValue = "";
-// });
 
 function saveToLocalStorage() {
   var key = document.getElementById('storageKey').value;
