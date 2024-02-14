@@ -190,18 +190,13 @@ main {
     height: 500px;
     width: 440px;
     object-fit: cover;
-    object-position: top;
-    filter: grayscale(100%);
+    /* object-position: top; */
     border-radius: 15px;
+    transition: transform 1s;
 }
 
 .myImage img:hover {
-    filter: grayscale(0%);
-    transition: 1s;
-    border: 8px solid;
-    border-color: rgb(0, 0, 0);
-    transition: 1s;
-
+    transform: scale(1.2);
 }
 
 @keyframes anime {
@@ -463,7 +458,7 @@ footer {
         position: fixed;
         top: -12px;
         left: -12px;
-        width: 85%;
+        width: 80%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.31);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
