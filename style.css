@@ -13,7 +13,9 @@
 body {
     width: 100vw;
     height: 100vh;
-
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 header {
@@ -517,7 +519,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        overflow: hidden;
     }
 
     .intro {
